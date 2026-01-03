@@ -28,20 +28,20 @@ Ejecutamos de nuevo la herramienta sobre nuestra aplicación para ver cual es su
 Rendimiento general:
 | Métrica                 | ANTES      | DESPUÉS    | Cambio        |
 | ----------------------- | ---------- | ---------- | ------------- |
-| Requests/sec            | **470.93** | **330.79** | 🔻 **–29.8%** |
-| Time per request (mean) | **106 ms** | **151 ms** | 🔺 **+42%**   |
-| Tiempo total            | **2.12 s** | **3.02 s** | 🔺 más lento  |
-| Failed requests         | 0          | 0          | ✔ OK          |
+| Requests/sec            | 470.93     | 330.79     | –29.8%        |
+| Time per request (mean) | 106 ms     | 151 ms     | +42%          |
+| Tiempo total            | 2.12 s     | 3.02 s     | Más lento     |
+| Failed requests         | 0          | 0          | Bien          |
 
 Latencias:
 | Percentil  | ANTES (ms) | DESPUÉS (ms) | Cambio         |
 | ---------- | ---------- | ------------ | -------------- |
-| 50%        | 95         | 109          | 🔺             |
-| 75%        | 125        | 144          | 🔺             |
-| 90%        | 170        | 183          | 🔺             |
-| 95%        | 203        | 210          | 🔺             |
-| 99%        | 254        | 256          | ≈              |
-| 100% (máx) | **286**    | **676**      | 🔥 **MUY MAL** |
+| 50%        | 95         | 109          | Incremento     |
+| 75%        | 125        | 144          | Incremento     |
+| 90%        | 170        | 183          | Incremento     |
+| 95%        | 203        | 210          | Incremento     |
+| 99%        | 254        | 256          | Igual          |
+| 100% (máx) | 286        | 676          | Incremento     |
 
 Tiempos de conexión vs procesamiento:
 | Métrica         | ANTES  | DESPUÉS    |
@@ -49,7 +49,7 @@ Tiempos de conexión vs procesamiento:
 | Mean connect    | 1 ms   | 1 ms       |
 | Max connect     | 33 ms  | 10 ms      |
 | Mean processing | 103 ms | 116 ms     |
-| Max processing  | 286 ms | **675 ms** |
+| Max processing  | 286 ms | 675 ms     |
 
 Observaciones:
   * El tuning aplicado redujo el throughput y aumentó la latencia.
